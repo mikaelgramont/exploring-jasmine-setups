@@ -1,0 +1,21 @@
+{
+  "name": "exploring-jasmine-setups",
+  "version": "0.1.0",
+  "description": "Testing how to setup Jasmine for testing.",
+  "main": "tester.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikaelgramont/exploring-jasmine-setups.git"
+  },
+  "author": "Mikael Gramont",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mikaelgramont/exploring-jasmine-setups/issues"
+  },
+  "homepage": "https://github.com/mikaelgramont/exploring-jasmine-setups#readme"
+}
