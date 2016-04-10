@@ -30,3 +30,5 @@ World.prototype.getTriggerableEntities = function() {
 World.prototype.getThreeObjectEntities = function() {
 	return this.getEntitiesByComponent(Component.NAMES.THREEOBJECT);	
 };
+
+module.exports = World;

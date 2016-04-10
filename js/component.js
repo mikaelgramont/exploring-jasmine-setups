@@ -1,6 +1,4 @@
-var Component = function() {
-
-};
+var Component = function() {};
 
 Component.NAMES = {
 	'TRIGGER': 'trigger',
@@ -14,3 +12,5 @@ Component.prototype.getName = function() {
 Component.prototype.cleanup = function() {
 	throw new Error("cleanup called on abstract Component object");
 };
+
+module.exports = Component;

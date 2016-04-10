@@ -1,3 +1,5 @@
+var Component = require('./component');
+
 var Entity = function(name) {
 	this.name = name;
 	this.components = {};
@@ -47,3 +49,5 @@ Entity.prototype.removeComponent = function(name) {
 Entity.prototype.hasComponent = function(name) {
 	return typeof this.components[name] !== 'undefined';
 };
+
+module.exports = Entity;

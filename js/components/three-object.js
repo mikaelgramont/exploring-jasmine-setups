@@ -1,3 +1,5 @@
+var Component = require('../component');
+
 var ThreeObject = function(scene, object) {
 	Component.call(this);
 	this.scene = scene;
@@ -23,3 +25,5 @@ ThreeObject.prototype.cleanup = function() {
 	this.object = null;
 	this.scene = null;
 };
+
+module.exports = ThreeObject;
