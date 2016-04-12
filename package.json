@@ -11,6 +11,7 @@
   },
   "scripts": {
     "build": "browserify js/main.js > dist/bundle.js",
+    "debug-build": "browserify --debug js/main.js > dist/bundle-debug.js",
     "test": "jasmine JASMINE_CONFIG_PATH=jasmine.json"
   },
   "repository": {
