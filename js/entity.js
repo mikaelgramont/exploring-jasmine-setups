@@ -23,7 +23,7 @@ Entity.prototype.reset = function() {
  */
 
 Entity.prototype.addComponent = function(component) {
-	name = component.getName();
+	var name = component.getName();
 	if (this.hasComponent(name)) {
 		throw new Error("Adding already existing component " + name);
 	}
