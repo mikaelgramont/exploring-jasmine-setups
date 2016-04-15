@@ -33,23 +33,26 @@ module.exports = Trigger;
 },{"../component":1}],3:[function(require,module,exports){
 var Component = require('./component');
 
-var Entity = function(name) {
-	this.name = name;
-	this.components = {};
-};
-
-Entity.prototype.getName = function() {
-	return this.name;
-};
-
-Entity.prototype.reset = function() {
-	this.name = null;
-
-	for (var name in this.components) {
-		this.components[name].cleanup();
+class Entity {
+	constructor(name) {
+		this.name = name;
+		this.components = {};
 	}
-	this.components = {};
+
+	getName() {
+		return this.name;
+	}
+
+	reset() {
+		this.name = null;
+
+		for (let name in this.components) {
+			this.components[name].cleanup();
+		}
+		this.components = {};
+	}
 }
+
 
 /**
  * COMPONENT MANAGEMENT
