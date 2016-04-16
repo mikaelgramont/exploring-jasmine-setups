@@ -49,7 +49,7 @@ class Entity {
 
 	hasComponent(name) {
 		return typeof this.components[name] !== 'undefined';
-	}ß
+	}
 }
 
 module.exports = Entity;
