@@ -33,7 +33,7 @@ module.exports = Trigger;
 },{"../component":1}],3:[function(require,module,exports){
 var Component = require('./component');
 
-class Entity {
+class Entity {	
 	constructor(name) {
 		this.name = name;
 		this.components = {};
@@ -51,42 +51,44 @@ class Entity {
 		}
 		this.components = {};
 	}
+
+
+	/**
+	 * COMPONENT MANAGEMENT
+	 */
+	addComponent(component) {
+		var name = component.getName();
+		if (this.hasComponent(name)) {
+			throw new Error("Adding already existing component " + name);
+		}
+		this.components[name] = component;
+	}
+
+	getComponent(name) {
+		if (!this.hasComponent(name)) {
+			throw new Error("No component by name " + name);
+		}
+
+		return this.components[name];
+	}
+
+	removeComponent(name) {
+		if (!this.hasComponent(name)) {
+			throw new Error("No component by name '" + name + "'");
+		}
+
+		delete this.components[name];
+	}
+
+	hasComponent(name) {
+		return typeof this.components[name] !== 'undefined';
+	}
 }
 
-
-/**
- * COMPONENT MANAGEMENT
- */
-
-Entity.prototype.addComponent = function(component) {
-	var name = component.getName();
-	if (this.hasComponent(name)) {
-		throw new Error("Adding already existing component " + name);
-	}
-	this.components[name] = component;
-};
-
-Entity.prototype.getComponent = function(name) {
-	if (!this.hasComponent(name)) {
-		throw new Error("No component by name " + name);
-	}
-
-	return this.components[name];
-};
-
-Entity.prototype.removeComponent = function(name) {
-	if (!this.hasComponent(name)) {
-		throw new Error("No component by name '" + name + "'");
-	}
-
-	delete this.components[name];
-};
-
-Entity.prototype.hasComponent = function(name) {
-	return typeof this.components[name] !== 'undefined';
-};
-
 module.exports = Entity;
+
+
+
 },{"./component":1}],4:[function(require,module,exports){
 /**
  * Just a throw-away file that makes use of the ECS stuff to test
