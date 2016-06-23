@@ -20,7 +20,7 @@ module.exports = function(karma) {
     preprocessors: {
       // All JS files need to be processed. Browserify will figure
       // out dependencies on its own.
-      'js/**/*.js': [ 'browserify' ]
+      'js/**/*.js*': [ 'browserify' ]
     },
 
     // Run the tests when tests or source files change.

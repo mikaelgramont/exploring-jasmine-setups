@@ -2,6 +2,7 @@
  * Just a throw-away file that makes use of the ECS stuff to test
  * the Browserify compilation.
  */
+import {Hello} from './hello.jsx';
 import {Component} from './component';
 import {Entity} from './entity';
 import {System} from './system';
