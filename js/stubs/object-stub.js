@@ -1,3 +1,3 @@
 var ObjectStub = function() {};
 
-module.exports = ObjectStub;
+export {ObjectStub};

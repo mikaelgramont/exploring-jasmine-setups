@@ -1,6 +1,6 @@
-var ComponentStub = require('../stubs/component-stub');
-var Entity = require('../entity');
-var System = require('../system');
+import {ComponentStub} from '../stubs/component-stub';
+import {Entity} from '../entity';
+import {System} from '../system';
 
 describe('System', function() {
 	it("should return a list of entities with a stub component", function() {

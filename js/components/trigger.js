@@ -1,4 +1,4 @@
-var Component = require('../component');
+import {Component} from '../component';
 
 var Trigger = function() {
 	Component.call(this);
@@ -11,4 +11,4 @@ Trigger.prototype.getName = function() {
 Trigger.prototype.cleanup = function() {
 };
 
-module.exports = Trigger;
+export {Trigger};

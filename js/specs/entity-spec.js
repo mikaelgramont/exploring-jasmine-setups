@@ -1,5 +1,5 @@
-var ComponentStub = require('../stubs/component-stub');
-var Entity = require('../entity');
+import {ComponentStub} from '../stubs/component-stub';
+import {Entity} from '../entity';
 
 describe("Entity", function() {
   var componentA;

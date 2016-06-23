@@ -1,4 +1,4 @@
-var Component = require('../component');
+import {Component} from '../component';
 
 var ComponentStub = function(name) {
 	this.name = name || "component-stub";
@@ -12,4 +12,4 @@ ComponentStub.prototype.getName = function() {
 ComponentStub.prototype.cleanup = function() {
 };
 
-module.exports = ComponentStub;
+export {ComponentStub};

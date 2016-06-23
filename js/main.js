@@ -2,10 +2,10 @@
  * Just a throw-away file that makes use of the ECS stuff to test
  * the Browserify compilation.
  */
-var Component = require('./component');
-var Entity = require('./entity');
-var System = require('./system');
-var Trigger = require('./components/trigger');
+import {Component} from './component';
+import {Entity} from './entity';
+import {System} from './system';
+import {Trigger} from './components/trigger';
 
 var entityA = new Entity("entityA");
 entityA.addComponent(new Trigger());

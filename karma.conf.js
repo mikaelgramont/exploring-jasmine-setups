@@ -35,7 +35,9 @@ module.exports = function(karma) {
               // This triggers ES6 transpiling.
               "es2015",
               // This activates some necessary settings for the transpiling.
-              "stage-0"
+              "stage-0",
+              // React JSX transpiling
+              "react"
             ]
           }
         ]

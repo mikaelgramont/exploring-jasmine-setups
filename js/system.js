@@ -31,4 +31,4 @@ System.prototype.getThreeObjectEntities = function() {
 	return this.getEntitiesByComponent(Component.NAMES.THREEOBJECT);	
 };
 
-module.exports = System;
+export {System};

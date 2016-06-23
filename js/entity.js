@@ -1,4 +1,4 @@
-var Component = require('./component');
+import {Component} from './component';
 
 class Entity {	
 	constructor(name) {
@@ -52,6 +52,6 @@ class Entity {
 	}
 }
 
-module.exports = Entity;
+export {Entity};
 
 

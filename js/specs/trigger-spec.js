@@ -1,4 +1,4 @@
-var Trigger = require('../components/trigger');
+import {Trigger} from '../components/trigger';
 
 describe("Trigger", function() {
   var trigger;

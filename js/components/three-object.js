@@ -1,4 +1,4 @@
-var Component = require('../component');
+import {Component} from '../component';
 
 var ThreeObject = function(scene, object) {
 	Component.call(this);
@@ -26,4 +26,4 @@ ThreeObject.prototype.cleanup = function() {
 	this.scene = null;
 };
 
-module.exports = ThreeObject;
+export {ThreeObject};

@@ -13,4 +13,4 @@ Component.prototype.cleanup = function() {
 	throw new Error("cleanup called on abstract Component object");
 };
 
-module.exports = Component;
+export {Component};

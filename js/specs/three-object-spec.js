@@ -1,6 +1,6 @@
-var SceneStub = require('../stubs/scene-stub');
-var ObjectStub = require('../stubs/object-stub');
-var ThreeObject = require('../components/three-object');
+import {SceneStub} from '../stubs/scene-stub';
+import {ObjectStub} from '../stubs/object-stub';
+import {ThreeObject} from '../components/three-object';
 
 describe("Three-Object", function() {
   var three;

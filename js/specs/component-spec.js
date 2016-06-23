@@ -1,4 +1,4 @@
-var Component = require('../component');
+import {Component} from '../component';
 
 describe("Component", function() {
   var component;
